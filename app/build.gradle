@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+
 }
 
 android {
@@ -64,6 +66,10 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     //Gson
     implementation 'com.google.code.gson:gson:2.8.6'
+    //Koin
+    implementation "org.koin:koin-android-viewmodel:2.2.2"
+
+
 
 
 
