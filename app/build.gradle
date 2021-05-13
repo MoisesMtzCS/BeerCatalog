@@ -55,13 +55,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //Navegation
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
-    //
+    //Retrofit
     implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion") {
         exclude module: 'okhttp'
     }
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 
 
 }

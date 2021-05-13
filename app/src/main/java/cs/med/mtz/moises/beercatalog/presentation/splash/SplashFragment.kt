@@ -27,11 +27,11 @@ class SplashFragment : Fragment() {
     /** */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navegateToHome()
+        navigateToHome()
     }
 
     /** */
-    private fun navegateToHome(){
+    private fun navigateToHome(){
         CoroutineScope(Dispatchers.IO).launch {
             delay(1_200)
             findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
